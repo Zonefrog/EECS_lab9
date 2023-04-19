@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <h1>Validate Passwords</h1>
+</head>
+
+<body>
+<button onclick="validatePasses()">Ensure Validity</button> <br>
+    Enter a password <input type="text" id="firstPass" value=""> <br>
+    Enter it again <input type="text" id="secondPass" value=""> <br>
+<script>
+function validatePasses() {
+    var fPass = document.getElementById("firstPass").value;
+    var sPass = document.getElementById("secondPass").value;
+    if (fPass.length < 8 || sPass.length < 8) {
+        alert("One of the passwords has less than 8 letters, try again.")
+    } else if (fPass != sPass) {
+        alert("The two passwords need to match.")
+    } else {
+        alert("Passwords are valid.")
+    }
+}
+</script>
+</body>
+
+
+</html>

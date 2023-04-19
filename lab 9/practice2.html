@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <h1>Change Text color</h1>
+</head>
+
+
+<style>
+    #paragraph {
+        border-style: solid;
+        border-width: 24px;
+    }
+</style>
+
+<body>
+<script type = "text/javascript"> 
+function changeColor() {
+    var b_R = document.getElementById("b_R").value;
+    var b_G = document.getElementById("b_G").value;
+    var b_B = document.getElementById("b_B").value;
+    var b_width = document.getElementById("b_width").value;
+    var bg_R = document.getElementById("bg_R").value;
+    var bg_G = document.getElementById("bg_G").value;
+    var bg_B = document.getElementById("bg_B").value;
+    document.getElementById("paragraph").style.borderColor = `rgb(${b_R},${b_G},${b_B})`;
+    document.getElementById("paragraph").style.borderWidth = b_width
+    document.getElementById("paragraph").style.backgroundColor = `rgb(${bg_R},${bg_G},${bg_B})`;
+}
+</script>
+    Background Red: <input type="text" id="bg_R" value=""> <br>
+    Background Green: <input type="text" id="bg_G" value=""> <br>
+    Background Blue: <input type="text" id="bg_B" value=""> <br>
+    Border Red: <input type="text" id="b_R" value=""> <br>
+    Border Green: <input type="text" id="b_G" value=""> <br>
+    Border Blue: <input type="text" id="b_B" value=""> <br>
+    Border width: <input type="text" id="b_width" value=""> <br>
+    <button onclick="changeColor()">submit</button> <br>
+    <div id="paragraph">
+
+
+        Hello this is text. Wow it sure fills up lots of space. It needs to be several paragraphs long so it is going to say sentences like this one a whole lot. So, let's begin with the saying of many vapid sentences, right after I lay out what that means. Vapid sentences hold no particular value to the reader, or to the writer. They convey no needed knowledge. They exist just to exist, to fill some quota, pay lip service to something, or to take up space. Now, let's begin.<br>
+   
+   Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler <br>
+   
+   Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler <br>
+
+
+    </div>
+</body>
+
+</html>
